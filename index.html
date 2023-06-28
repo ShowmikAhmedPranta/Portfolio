@@ -56,9 +56,16 @@
         
 
     }
+#btnControl {
+    display: none;
+                }
 
+    #btnControl:checked + label > img {
+    width: 70%;
+    }
     img {
-        width:30%;
+        width:20%;
+        cursor: zoom-in;
     }
     </style>
 </head>
@@ -177,6 +184,10 @@
     </table>
 </p>
 <p><h3>Certificates</h3></p>
+
+<input type="checkbox" id="btnControl"/>
+<label class="btn" for="btnControl">
+    
 <img src="Python1.png">
 <img src="Linux1.png">
 <img src="SPSS1.png">
@@ -189,6 +200,7 @@
 <img src="Data2.png">
 <img src="PHP2.png">
 <img src="CSS2.png">
-<img src="ML2.png"
+<img src="ML2.png">
+</label>
 </body>
 </html>
