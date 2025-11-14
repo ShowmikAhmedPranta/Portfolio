@@ -1,0 +1,409 @@
+/* Basic Reset for the list */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('logo_blurred.png');
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+.ceo {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: rgb(201, 113, 113);
+  padding: 10px;
+  color:#eee;
+  width:60%;
+}
+.ceo div {
+  background-color: #191616;
+  padding: 10px;
+  text-align: center;
+  color:#eee;
+}
+
+.ceo div img {
+    max-width: 200px;
+}
+
+
+.top-bar ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arranges list items horizontally */
+    background-color: #333; /* Dark background color */
+    overflow: hidden; /* Ensures the background color covers the floated/flex items */
+    width: 100%;
+}
+
+/* Style the list items */
+.top-bar li {
+    /* No float needed with flexbox */
+}
+
+/* Style the links inside the navigation bar */
+.top-bar a {
+    display: block; /* Makes the whole link area clickable */
+    color: #f2f2f2; /* Light text color */
+    text-align: center;
+    padding: 14px 16px; /* Spacing around the text */
+    text-decoration: none; /* Removes default link underline */
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Change the color of links on hover */
+.top-bar a:hover {
+    background-color: #ddd; /* Lighter background on hover */
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.top-bar a.active {
+    background-color: #ce4c55; /* Highlight color for the current page */
+    color: white;
+}
+
+
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Pushes children (logo and nav) to opposite ends */
+    align-items: center; /* Vertically centers the items */
+    background-color: #333;
+    padding: 10px 20px; /* Some padding around the edges */
+}
+
+.site-header h1 {
+    font-size: 24px; /* Default size for mobile (mobile-first approach) */
+    margin: 0;
+    text-align: left;
+}
+
+.slider-container {
+    width: 80%;
+    height: 40%;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden; /* Important for automatic overflow of content */
+}
+
+.slider-window {
+    width: 90%;
+    height: 30%;
+    overflow: hidden;
+    border: 1px solid #ef0606;
+    border-radius: 25px;
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* JS will manage positioning, CSS provides basic layout */
+    height: 100%;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.slide-track {
+    width: 100%; 
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes up exactly the container width */
+    flex-shrink: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Navigation Dots Styling */
+.slider-nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slide p {
+    word-wrap: break-word;      /* Older property for compatibility */
+    overflow-wrap: break-word;  /* Modern standard */
+    hyphens: auto;              /* Optional: allows hyphenation if supported */
+    margin: 0 0 10px 0; 
+    width:300px;        /* Add some standard paragraph spacing */
+}
+
+.about_us {
+    background-color: #080000;
+    color:#ffffff;
+    margin-left: 30%;
+    border-radius: 25px;
+    opacity: 0.8;
+
+}
+.righted {
+    text-align: right;
+    margin-left: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.lefted {
+    text-align: left;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.capabilities {
+    margin-right: 30%;
+    background-color: #c95959;
+    border-radius: 25px;
+}
+
+
+
+/*Round Scroll slide   start*/
+
+
+
+
+
+/*Round Scroll slide   end*/
+
+
+
+
+/* For tablets and larger phones (min-width: 600px) */
+@media screen and (min-width: 700px) {
+    .site-header h1 {
+        font-size: 36px;
+    }
+}
+
+
+
+
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    display: block;
+}
+
+.top-contact-bar {
+    background-color: #eee; /* Light gray background */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around; /* Spreads items evenly */
+    align-items: center;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #555;
+    max-width: 1200px; /* Optional: keep content centered on very large screens */
+    margin: 0 auto; /* Centers the container */
+}
+
+.contact-info span {
+    /* Adds a little space between the items */
+    margin: 0 10px;
+}
+
+.slider-container {
+    width: 80%;
+    height: 250px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden; /* Important for automatic overflow of content */
+}
+
+.slider-window {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    border: 1px solid #a05f5f;
+    border-radius: 25px;
+}
+
+p{
+    width:300px;
+    text-align: left;
+}
+
+
+
+.slides {
+    display: flex;
+    width: 100%; /* JS will manage positioning, CSS provides basic layout */
+    height: 100%;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.slide-track {
+    width: 100%; 
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes up exactly the container width */
+    flex-shrink: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Navigation Dots Styling */
+.slider-nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slide p {
+    word-wrap: break-word;      /* Older property for compatibility */
+    overflow-wrap: break-word;  /* Modern standard */
+    hyphens: auto;              /* Optional: allows hyphenation if supported */
+    margin: 0 0 10px 0; 
+    width:300px;        /* Add some standard paragraph spacing */
+}
+
+
+.scrollable-container {
+    width: 90%; /* Adjust width as needed */
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.scrollable-content {
+    height: 150px; /* Fixed height is necessary for overflow to trigger */
+     /* Add space so text doesn't hide behind the scrollbar */
+    
+    /* Key CSS property to enable vertical scrolling */
+    overflow-y: auto; 
+    box-sizing: border-box;
+    padding: 10px 15px 20px 10px; 
+    
+    /* Optional: Hide horizontal overflow just in case */
+    overflow-x: hidden;
+}
+
+/* Optional: Add basic styling to the paragraphs inside */
+.scrollable-content p {
+    margin-bottom: 0px;
+    line-height: 1.4;
+}
+
+.nav-dot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+/* Active dot styling applied by JavaScript */
+.nav-dot.active {
+    background-color: #333;
+}
+
+.text-container {
+    /* Optional: Center the paragraph on the page */
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 0 10px; /* Prevents touching screen edges */
+}
+
+.responsive-paragraph {
+    width: 60%; /* The default: 60% of its parent container (.text-container) */
+    margin: 0 auto; /* Centers the paragraph within its container */
+    line-height: 1.5; /* Improves readability */
+    font-size: 1rem; /* Good base font size, typically 16px */
+}
+
+@media screen and (max-width: 600px) {
+    /* Remove justify-content from the header if needed, but space-between still works */
+
+
+    .top-bar {
+        width: 100%; /* Make the navigation container take full width */
+    }
+
+    .top-bar ul {
+        flex-direction: column; /* Stacks list items vertically */
+        width: 100%;
+        background-color: #444; /* Optional: different background for mobile menu */
+    }
+    
+    .top-bar li a {
+        text-align: left; /* Aligns text to the left when stacked */
+        padding: 10px 16px;
+        border-bottom: 1px solid #555; /* Optional separator between links */
+    }
+
+     .contact-info {
+        flex-direction: column; /* Stacks the contact items vertically on mobile */
+        align-items: flex-start; /* Aligns stacked items to the left */
+    }
+
+    .contact-info span {
+        margin: 5px 0; /* Add vertical spacing instead of horizontal */
+        text-align: left;
+    }
+
+        .responsive-paragraph {
+        width: 90%; /* Increase width to 90% on small screens for better readability */
+        font-size: 1rem; /* Maintain readable font size */
+
+    }
+
+        .slider-container { /* Increase width to 95% on mobile to use more screen space */
+        margin: 20px auto; /* Adjust margin for mobile */
+        height: 300px;
+        width:300px;
+    }
+
+    .slider-window {
+        /* Optional: adjust the height for mobile to be less tall */
+        height: 250px; 
+        width:250px;
+        margin:auto;
+    }
+
+    p {
+        max-width: 150px;
+        text-align: left;
+
+    }
+.ceo {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: rgb(192, 53, 53);
+  padding: 10px;
+  color:#eee;
+}
+.ceo div {
+  background-color: #191616;
+  padding: 10px;
+  text-align: center;
+  color:#eee;
+}
+
+}
+
